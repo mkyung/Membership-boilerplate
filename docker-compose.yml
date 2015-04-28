@@ -1,0 +1,16 @@
+db:
+    image: mongo:latest
+    ports:
+        - "27017:27017"
+    command: /usr/bin/mongod --smallfiles
+server:
+    build: ./server
+    ports:
+        - "8080:8080"
+    volumes:
+        - ./server/code:/code
+    links:
+        - db
+    expose:
+        - "8080"
+    command: sh /code/start.sh
