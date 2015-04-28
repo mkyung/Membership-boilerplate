@@ -1,6 +1,16 @@
-FROM    centos:latest
+# Adapted from
+# https://github.com/marcusandre/docker-nodejs/blob/master/Dockerfile
 
-RUN     curl -sL https://rpm.nodesource.com/setup | bash -
-RUN     yum install -y nodejs
+FROM        ubuntu
+
+ENV         VERSION 0.12.0
+
+RUN         apt-get update -qq
+RUN         apt-get install -y make gcc g++ python curl libssl-dev
+RUN         apt-get install -y git
+
+RUN         curl -L# http://nodejs.org/dist/v$VERSION/node-v$VERSION-linux-x64.tar.gz | tar -zx --strip 1 -C /usr/local
+
+RUN         rm -fr /usr/src/node
 
 EXPOSE  8080

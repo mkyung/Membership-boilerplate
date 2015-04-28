@@ -1,10 +1,10 @@
 {
-    "name": "membership",
-    "private": true,
-    "version": "0.0.1",
-    "description": "A simple membership system built with Koa and MongoDB",
-    "author": "Hermann Yung <hermannyung@gmail.com>",
-    "dependencies": {
-        "koa": "^0.18.0"
-    }
+  "name": "membership",
+  "private": true,
+  "version": "0.0.1",
+  "description": "A simple membership system built with Koa and MongoDB",
+  "author": "Hermann Yung <hermannyung@gmail.com>",
+  "dependencies": {
+    "koa": "^0.18.1"
+  }
 }
