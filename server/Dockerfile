@@ -13,4 +13,7 @@ RUN         curl -L# http://nodejs.org/dist/v$VERSION/node-v$VERSION-linux-x64.t
 
 RUN         rm -fr /usr/src/node
 
+# install Node global packages
+RUN         npm install -g nodemon
+
 EXPOSE  8080
