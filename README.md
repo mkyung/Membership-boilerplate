@@ -1,10 +1,10 @@
-# About Membership
+# About Membership-boilerplate
 
-Membership is a simple boilerplate member registration/login system built with Koa and MongoDB. This repository is isolated in Docker containers. See the instructions for installation details.
+This is a simple boilerplate for membership registration/login, built with Koa, MongoDB (Mongoose) and Passport (Koa-passport). This repository is run inside a Docker container. See the instructions for installation details.
 
 ## Instructions
 
-### Prerequsites
+### Prerequisites
 
  - Docker with docker-compose
 
