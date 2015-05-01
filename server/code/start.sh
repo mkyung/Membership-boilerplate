@@ -1,3 +1,3 @@
 cd /code
 
-npm install && nodemon --harmony index.js
+npm install --verbose && nodemon --harmony index.js
